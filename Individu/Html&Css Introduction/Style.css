@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero {
+    background-color: #e8e3de;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; 
+}
+
+nav {
+    width: 100%;
+    height: 12%;
+    background-color: #111111;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+nav .logo {
+    width: 40px;
+    margin-right: 80px;
+    margin-left: 20px;
+}
+
+nav ul li {
+    background-color: #111111;
+    margin-right: 10px;
+    list-style: none;
+    display: inline-block;
+    border-radius: 6px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+nav ul li:hover {
+    background-color: #2b2a29;
+}
+
+nav ul li a:hover {
+    color: #ff2e49;
+}
+
+nav .Search img {
+    width: 25px;
+}
+
+nav .Search {
+    border: 0;
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background: #2b2a29;
+    margin-left: 90px;
+}
+
+nav .Bahasa img {
+    width: 18px;
+}
+
+nav .Bahasa {
+    background: #111111;
+    border: 0;
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+nav .Play {
+    background-color: #ff2e49;
+    border: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+nav .Play a {
+    text-decoration: none;
+    color: black;
+}
+
+.content {
+    text-align: center;
+    margin-top: 20px;
+    z-index: 1;
+}
+
+.content h6{
+    font-size: 15px;
+    color: #e8e3de;
+}
+
+.content img{
+    margin-top: 20px;
+}
+
+.content button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #ff2e49;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.content button a {
+    text-decoration: none;
+    color: white;
+}
+
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+@media (min-aspect-ratio: 16/9){
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9){
+    .back-video{
+        width: auto;
+        height: 100%;
+    }
+}
